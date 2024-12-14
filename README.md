@@ -39,7 +39,21 @@ Lottie je na voljo pod **Apache 2.0 licenco**, kar omogoča uporabo tako za kome
 
 ## Primeri uporabe 📂
 ### Preprost prikaz animacije
-```kotlin
-val lottieAnimationView = findViewById<LottieAnimationView>(R.id.animationView)
-lottieAnimationView.setAnimation("animation.json")
-lottieAnimationView.playAnimation()
+![Demo GIF](gifs/FNF_animation.gif)
+```xml
+<com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/mainLottie"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    app:lottie_rawRes="@raw/page_not_found"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    app:layout_constraintTop_toBottomOf="@id/welcomeText"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp" />
+```
+
+![Demo GIF](gifs/game.gif)
+
+### Animiran prehod 
