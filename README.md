@@ -39,7 +39,8 @@ Lottie je na voljo pod **Apache 2.0 licenco**, kar omogoča uporabo tako za kome
 
 ## Primeri uporabe 📂
 ### Preprost prikaz animacije
-![Demo GIF](gifs/FNF_animation.gif)
+---
+![FNF GIF](gifs/FNF.gif)
 ```xml
 <com.airbnb.lottie.LottieAnimationView
     android:id="@+id/mainLottie"
@@ -53,7 +54,93 @@ Lottie je na voljo pod **Apache 2.0 licenco**, kar omogoča uporabo tako za kome
     app:layout_constraintEnd_toEndOf="parent"
     android:layout_marginTop="16dp" />
 ```
+---
+![Game GIF](gifs/output.gif)
+---
+### Animiran gumb&prehod 
+---
+![Prehod GIF](gifs/button.gif)
+```xml
+<!-- Button Animation -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieButton"
+        android:layout_width="320dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainLottie"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/button_animation" />
+```
+---
+![Prehod GIF](gifs/transition.gif)
 
-![Demo GIF](gifs/game.gif)
+```xml
+<!-- Full-Screen Transition Animation located in activity_main -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/transitionLottie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/transition_animation"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+    android:layout_gravity="center"
+    android:background="@android:color/white" />
+```
+---
+```kotlin
+// Button animation logic
+binding.lottieButton.setOnClickListener {
+    // Play the button animation
+    binding.lottieButton.playAnimation()
 
-### Animiran prehod 
+    // After button animation ends, show the transition animation
+    binding.lottieButton.addAnimatorListener(object : Animator.AnimatorListener {
+        override fun onAnimationStart(animation: Animator) {}
+
+        override fun onAnimationEnd(animation: Animator) {
+            // Start the transition animation
+            binding.transitionLottie.visibility = View.VISIBLE
+            binding.transitionLottie.playAnimation()
+
+            // Navigate to the next activity after the transition animation ends
+            binding.transitionLottie.addAnimatorListener(object : Animator.AnimatorListener {
+                override fun onAnimationStart(animation: Animator) {}
+
+                override fun onAnimationEnd(animation: Animator) {
+                    startActivity(Intent(this@MainActivity, ExampleActivity::class.java))
+                    finish() // Optionally finish this activity
+                }
+
+                override fun onAnimationCancel(animation: Animator) {}
+
+                override fun onAnimationRepeat(animation: Animator) {}
+            })
+        }
+
+        override fun onAnimationCancel(animation: Animator) {}
+
+        override fun onAnimationRepeat(animation: Animator) {}
+    })
+}
+```
+---
+### Nalaganje
+---
+![Nalganje GIF](gifs/loading.gif)
+```kotlin
+ // Delay for the duration of the Lottie animation
+        Handler(Looper.getMainLooper()).postDelayed({
+            // Start MainActivity after the animation finishes
+            startActivity(Intent(this, MainActivity::class.java))
+            finish() // Finish SplashActivity so it's removed from the back stack
+        }, 3000) // 3000ms = 3 seconds
+```
+---
+### Uporaba na vajah
+---
+![Nalganje GIF](gifs/vaja.gif)
