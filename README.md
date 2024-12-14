@@ -40,7 +40,8 @@ Lottie je na voljo pod **Apache 2.0 licenco**, kar omogoča uporabo tako za kome
 ## Primeri uporabe 📂
 ### Preprost prikaz animacije
 ---
-![FNF GIF](gifs/FNF.gif)
+<img src="gifs/FNF.gif" alt="FNF GIF" width="300" />
+
 ```xml
 <com.airbnb.lottie.LottieAnimationView
     android:id="@+id/mainLottie"
@@ -55,11 +56,13 @@ Lottie je na voljo pod **Apache 2.0 licenco**, kar omogoča uporabo tako za kome
     android:layout_marginTop="16dp" />
 ```
 ---
-![Game GIF](gifs/output.gif)
+<img src="gifs/output.gif" alt="Game GIF" width="300" />
+
 ---
-### Animiran gumb&prehod 
+### Animiran gumb & prehod 
 ---
-![Prehod GIF](gifs/button.gif)
+<img src="gifs/button.gif" alt="Button GIF" width="300" />
+
 ```xml
 <!-- Button Animation -->
     <com.airbnb.lottie.LottieAnimationView
@@ -75,7 +78,8 @@ Lottie je na voljo pod **Apache 2.0 licenco**, kar omogoča uporabo tako za kome
         app:lottie_rawRes="@raw/button_animation" />
 ```
 ---
-![Prehod GIF](gifs/transition.gif)
+<img src="gifs/transition.gif" alt="Transition GIF" width="300" />
+
 
 ```xml
 <!-- Full-Screen Transition Animation located in activity_main -->
@@ -131,7 +135,8 @@ binding.lottieButton.setOnClickListener {
 ---
 ### Nalaganje
 ---
-![Nalganje GIF](gifs/loading.gif)
+<img src="gifs/loading.gif" alt="Loading GIF" width="300" />
+
 ```kotlin
  // Delay for the duration of the Lottie animation
         Handler(Looper.getMainLooper()).postDelayed({
@@ -143,4 +148,4 @@ binding.lottieButton.setOnClickListener {
 ---
 ### Uporaba na vajah
 ---
-![Nalganje GIF](gifs/vaja.gif)
+<img src="gifs/vaja.gif" alt="Vaja GIF" width="300" />
