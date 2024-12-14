@@ -1,20 +1,20 @@
-# Lottie 🎨
+# Lottie Android 🎨
 
 ## Zakaj? 🤔
-Lottie Android je knjižnica za animacije, ki omogoča preprosto integracijo in prikazovanje animacij v aplikacijah za Android. Knjižnica podpira **JSON animacije**, ustvarjene v orodju Adobe After Effects z Bodymovin pluginom. Primerna je za uporabo zaradi svoje **učinkovitosti**, preprostosti in široke podpore.
+Lottie Android je knjižnica za animacije, ki omogoča preprosto integracijo in prikazovanje animacij v aplikacijah za Android. Knjižnica podpira **JSON animacije**, ustvarjene v orodju Adobe After Effects. Primerna je za uporabo zaradi svoje **učinkovitosti**, preprostosti in široke podpore. Doda "poseben" učinek aplikaciji.
 
 ---
 
 ## Prednosti ✅
 - **Preprosta uporaba** in integracija
 - Podpira kompleksne animacije brez večjega vpliva na zmogljivost aplikacije
-- Široka podpora animacijam ustvarjenim z Bodymovin
 - Aktivna skupnost in veliko primerov uporabe
+- Podpira "funkcionalne" kot "estetske" animacije.
 
 ---
 
 ## Slabosti ❌
-- Omejitve glede podpore specifičnih funkcionalnosti iz Adobe After Effects
+- Kompleksna integracija "funkcionalnih" animacij
 - Možne težave s performansom pri zelo kompleksnih animacijah
 - Potreba po skrbni optimizaciji JSON animacij za najboljšo uporabniško izkušnjo
 
@@ -25,17 +25,15 @@ Lottie je na voljo pod **Apache 2.0 licenco**, kar omogoča uporabo tako za kome
 
 ---
 
-## Število zvezdic, sledilcev, forkov ⭐
-- **Stars:** TBD
-- **Followers:** TBD
-- **Forks:** TBD
+## Število zvezdic, forkov ⭐
+- **Stars:** 35.1k
+- **Forks:** 5.4k
 
 ---
 
 ## Vzdrževanje projekta 🔧
-- **Zadnja posodobitev:** TBD
-- **Commit aktivnost:** TBD
-- **Število razvijalcev:** TBD
+- **Zadnja posodobitev:** 4.12.2024
+- **Število razvijalcev:** 160
 
 ---
 
