@@ -32,7 +32,7 @@ Lottie je na voljo pod **Apache 2.0 licenco**, kar omogoča uporabo tako za kome
 ---
 
 ## Vzdrževanje projekta 🔧
-- **Zadnja posodobitev:** 4.12.2024
+- **Zadnja posodobitev:** 16.12.2024
 - **Število razvijalcev:** 160
 
 ---
