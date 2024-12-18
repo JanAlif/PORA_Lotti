@@ -148,4 +148,6 @@ binding.lottieButton.setOnClickListener {
 ---
 ### Uporaba na vajah
 ---
+
 <img src="gifs/activity.gif" alt="Vaja GIF" width="300" />
+
